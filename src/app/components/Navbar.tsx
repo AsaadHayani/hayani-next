@@ -49,7 +49,7 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden text-center bg-slate-100 dark:bg-slate-900 border-b my-border absolute top-16 left-0 w-full px-4 py-4 space-y-4">
+        <div className="z-50 md:hidden text-center bg-slate-100 dark:bg-slate-900 border-b my-border absolute top-16 left-0 w-full px-4 py-4 space-y-4">
           {headerItems.map(({ text, link }) => (
             <Link
               key={text}

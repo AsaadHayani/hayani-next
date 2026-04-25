@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --primary: #fe3817;
+}
+.my-width {
+  @apply container mx-auto px-10;
+}
+.my-text {
+  color: var(--primary);
+}
+.my-bg {
+  background-color: var(--primary);
+}
+.my-border {
+  border-color: var(--primary);
+}
+.my-title {
+  @apply text-4xl text-(--primary);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-[#ffad9e];
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-(--primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#941600];
+}
+hr {
+  @apply my-3 border border-(--primary);
+}
+header li a,
+header a.block {
+  @apply hover:text-[#941600]/75 text-lg transition duration-300;
+}
+input,
+textarea {
+  @apply w-full p-3 border border-(--primary) rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)];
+}
+button:not(.no-btn) {
+  @apply px-5 py-2 rounded text-white cursor-pointer hover:opacity-60 transition-all ease-in-out duration-300;
+}

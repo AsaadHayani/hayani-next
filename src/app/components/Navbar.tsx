@@ -41,7 +41,7 @@ const Navbar = () => {
 
           <div
             onClick={() => setOpen(!open)}
-            className="md:hidden rounded-full p-2 cursor-pointer border-2 border-dashed"
+            className="z-50 md:hidden rounded-full p-2 cursor-pointer border-2 border-dashed"
           >
             {open ? <FiX size={25} /> : <FiMenu size={25} />}
           </div>
